@@ -1,0 +1,476 @@
+/* =============================================================================================================*/
+/*                                                                                                              */
+/*                                                         This is your CSS                                     */
+/*                                                                                                              */
+/* =============================================================================================================*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  -->Base CSS Style<--*/
+
+body {
+   background: #f7f7f7;
+}
+
+p {
+    /*set the paragraph font family to roboto with a font weight of 400 and a size of 23 pixels*/
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    /*add a font size of 21 pixels*/
+}
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    /*set the font family as open sans with a fall back of your choice*/
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 200;
+    font-family: "roboto", sans-serif;
+    /*set the font family to roboto with a fall back of your choice and the font size to 21 pixes*/
+}
+
+/*  -->Layout CSS Style<--*/
+
+/*Center Stuff*/
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*navigation*/
+#top-nav {
+    /*the background needs to be set to #b8b8b8, a heigh of 60 piexls, and the padding should be 160 pixels left*/
+    text-align:  left;
+    
+    background-color: #b8b8b8;
+    height: 90px;
+    padding-left: 300px;
+}
+
+#top-nav ul {
+    height: 40px;
+    padding-top: 20px;
+    display: inline;
+}
+
+#top-nav li {
+    /*make sure you remove the list style and set the list to display horizontally*/
+    display: inline;
+    list-style: none;
+    text-align: center;
+    
+}
+
+#top-nav li a {
+    /*anchor tags will need to display in the inline-block style, will have a padding of 20 pixels all the way around, have a color of white, remove the underline from the anchor tags, set the font weight to a 300 thickness, have a font family of roboto with a fall back of your choice, and a transition of .6 seconds*/
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: Roboto, serif;
+    transition-delay: 0.6s;
+    
+}
+
+#logo{
+    float: left;
+}
+
+#top-nav li a:hover {
+    /*set the background color to a grey but do not use the color name method, must use hex or RGB or HSL*/
+    background-color: #D3D3D3;
+}
+
+#top-nav h1{
+    display: inline-block;
+    margin: 10px 30px 0 0;
+}
+
+.nav-h1 {
+    /*the font size for .nav-h1 needs to be set 170% above normal*/
+    font-family: "Roboto", sans-serif;
+   font-weight: 300; 
+    font-size: 170%;
+}
+
+/*Main Site Container*/
+
+.site {
+    width: 100%; /*this does not work for some reason, fix it*/
+}
+
+.site p, .site h2 {
+    /*using margin you need to center the .site p and h1 tags, you also need to center the text and set the spacing between each letter to 1 pixel*/
+    width: 70%;
+    padding: 30px 0 30px 0;
+    line-height: 1.3
+}
+
+/*This is the first section (Welcome)*/
+
+#home {
+    /*the background image for the home ID needs to be set to the file computer-cat.jpg. Locat it in the files and set      it. Now center the image and set the image to cover the area. Now set the height of this container to 500 pixels and set the color of the font inside this container to white by using hex, rgb or HSL values.*/
+    background-image: url("../images/bg/computer-cat.jpg"); 
+    height: 500px;
+    overflow: visible;
+    /* background-color: #82B; */
+    padding-top: 50px; 
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+
+    
+}
+
+#home p {
+        margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+    
+#home h2 {
+            margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+/* This is the second section (thumbs up)*/
+
+
+#more-info {
+    /*Set the height of this container to 300 pixels and add 50 pixels of padding to the top of the container. now set      the font color to black by using a hex rgb or hsl value*/
+    height: 300px;
+    padding-top: 50px;
+    width: 70%;
+    margin: -130px auto;
+    background-color: #fff;
+    color: #000000;
+    
+}
+
+#more-info p {
+    font-size: 45px;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right:  auto;
+    text-align: center;
+    
+}
+
+#animated-gif {
+    text-align: center; /*why is this text not aligning to the center?*/
+    
+}
+
+#thumbs-up {
+    /* Set the pagging to 270 pixels on the top and 205 pixels on the bottom and center the image using margin*/
+    width: 40%;
+    padding-top: 270px;
+    padding-bottom: 205px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#arrow {
+    /* Set the position of the arrow id to be absolute so that the arrow appears at 200 pixels from the left and 1040 pixels from the top. Then set the width to 20% of the original.*/
+    
+    position: absolute;
+    left:200px;
+    top: 1040px;
+    width: 20%;
+    
+    
+}
+
+/*This is the grey bar that breaks the page*/
+
+.break-bar {
+
+    
+    color: #fff;
+    background-color: #4A585A; /*why is the background color not working*/
+    text-align: center;
+
+    
+}
+
+.break-bar p {
+    padding: 85px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+   /* set the size of the font to 30 pixels*/
+    
+}
+/*This is the coding section*/
+#coding {
+    /* Set the font color to white using hex, RGB, or HSL*/
+    margin: 0 0 0 0;
+    height: 200px;
+    background-color: #51C090;
+    color: #ffffff;
+    
+}
+
+#coding p {
+    padding: 85px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+#coding-example {
+    height: 528px;
+    max-width: 100%;
+    /*The backgroumd should use an image called coding.jpg. Find it in the files and set it. Then set it to cover and       to not repeat*/
+    
+    background-image: url("../images/bg/coding.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #4A585A;
+    color: #fff;
+    padding: 25px 40px 0 0;
+    word-spacing: .3px;
+    
+    
+    
+    
+}
+
+
+#coding-example p {
+    /*the P tag needs to only take up 65% of the container width. Also make sure it floats to the right and is lef          aligned. Finally set the p tag to clear both a left or right float.*/
+    width: 65%;
+    float: right;
+    text-align: left;
+    background-color: rgba(247,247,247,.2);
+    padding: 20px 10px 5px 10px;
+    clear: left;
+    clear: right;
+}
+
+#coding-example h2 {
+    /*Set the top margin to 55 pixels*/
+    margin-top: 55px;
+    text-align: left;
+    float: right;
+    width: 65%;
+    background-color: rgba(247,247,247,.2);
+    padding: 20px 10px 5px 10px;
+}
+
+#end {
+    height: 300px;
+    width: 100%;
+    background-color: #4A585A;
+    color: white;
+    padding: 90px 0 0 0;
+}
+
+#end h3 {
+    /* Set the end H3 to have a padding of 25 pixels on the top, 15 on the right, and 15 pixels on the bottom. Then         center the H3 text.*/
+    padding: 25px 15px 15px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/*  -->Module CSS Style<--*/
+
+/*Big Button*/
+
+.bgbutton {
+    /* Set the width of the bgbutton to 202 pixels with a margin of auto*/
+    
+    width: 202px;
+    margin: auto;
+
+}
+
+.bgbutton a {
+    /* The anchor tag for bgbutton needs to be displayed inline block, have a color of white, remove the underline from the link, have a font family of arial, a font weight of 400, a bacground color of C05151, and a transition of .6 seconds. Finally this must be centered using the margin principle*/
+    display: inline-block;
+    color: white;
+    padding: 22px 60px 24px 60px;
+    text-decoration: none;
+    font-family: arial;
+    background-color: #C05151;
+    font-weight: 400;
+    transition-delay: 0.6s;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    
+}
+
+.bgbutton a:hover 
+{
+    background-color:  #B20000;
+}
+
+/*Add a rule that will cause the background of .bgbutton a to change when you hover over it. Have it change to the color B20000.*/
+
+
+/* Create a rule for the ID linkbutton and make it float to the right, display in the inline style, automatically adjust the width of the ID, clear both a left and right float, align the text to the left, have a top margin of 45 pixels. Finally set the background color to C05151 and a transition of .6 seconds.*/
+
+#linkbutton
+{
+    float: right;
+    display: inline;
+    width: auto;
+    clear: left;
+    clear: right;
+    text-align: left;
+    margin-top: 45px;
+    background-color: #C05151;
+    transition-delay: 0.6s;
+}
+
+
+#linkbutton p {
+    background-color: none;
+    width: inherit;
+    padding: 15px 55px 15px 15px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    
+    background-image: url("../images/bg/refresh.png"); 
+    background-repeat: no-repeat;
+    background-size: 20%;
+    position: relative;
+    
+    
+    /* the linkbutton p tag will need to have a background image set. The background image is located in the bg folder and is called refresh. You will also need to make sure the background does not repeat and is 20% of it's original size. Finally you will need to position the packground so it sits at 120 pixels on the x axis and 12 pixels on the Y axis*/
+}
+
+#linkbutton a {
+    color: #fff;
+}
+
+#linkbutton:hover {
+    background-color: #B20000;
+}
+
+/*gallery*/
+
+.gallery {
+    max-width: 95%;
+    display: block;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+}
+
+.gallery p {
+    margin: 0;
+    width: 100%;
+}
+.gallery img {
+    width: 30%;
+    position:relative;
+    display: inline-block;
+    padding:10px;
+}
+
+
+#center {
+   
+         margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    
+    
+}
+
+.container {
+position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+    font-size: 45px;
+}
+
+
+
